@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class VisitorsControllerTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+   #test "index action" do
+   #end
 end

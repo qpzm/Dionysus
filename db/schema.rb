@@ -10,25 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160925051908) do
-
-  create_table "members", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "place_id"
-    t.string   "fun"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["place_id"], name: "index_members_on_place_id"
-  end
-
-  create_table "places", force: :cascade do |t|
-    t.string   "name"
-    t.string   "img_url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20160924130634) do
 
   create_table "visitors", force: :cascade do |t|
+    t.string   "picture"
     t.string   "name"
     t.integer  "fun"
     t.datetime "created_at", null: false
